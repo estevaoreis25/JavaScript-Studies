@@ -1,0 +1,21 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "Studies about Object Oriented Programing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevaoreis25/JavaScript-Studies.git"
+  },
+  "author": "Estevao Reis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estevaoreis25/JavaScript-Studies/issues"
+  },
+  "homepage": "https://github.com/estevaoreis25/JavaScript-Studies#readme",
+  "type": "module"
+}
