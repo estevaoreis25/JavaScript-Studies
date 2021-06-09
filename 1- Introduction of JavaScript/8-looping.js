@@ -18,13 +18,10 @@ listaDeDestinos.push(`Brasilia`); // adding some items in the list
 
 const podeComprar = idadeComprador >= 18 || acompanhada == true;
 
+let existe = false;
 let contador = 0;
 
-let existe = false;
-console.log(listaDeDestinos.length);
 while (contador < listaDeDestinos.length) {
-    console.log(listaDeDestinos[contador]);
-    console.log("Valor do contador", contador);
     if (destino == listaDeDestinos[contador]) {
         console.log(destino, listaDeDestinos[contador]);
         existe = true;
@@ -33,7 +30,10 @@ while (contador < listaDeDestinos.length) {
     contador++;
 }
 
-if (existe) {
+if (existe && podeComprar) {
     console.log("Local escolhido", listaDeDestinos.splice(contador, 1));
     console.log("Locais restantes", listaDeDestinos);
+    console.log("Boa Viagem!!!");
+} else {
+    console.log("Desculpe, sua compra não pode ser efetuada.");
 }
