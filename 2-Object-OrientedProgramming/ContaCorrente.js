@@ -1,4 +1,3 @@
-import { Cliente } from "./Cliente.js";
 import { Conta } from "./Conta.js";
 
 export class ContaCorrente extends Conta{
@@ -6,5 +5,10 @@ export class ContaCorrente extends Conta{
     constructor (cliente, agencia){
         super(0, cliente, agencia);
         ContaCorrente.numeroContas += 1;
+    }
+    // superscript method 
+    sacar(valor) {
+        taxa = 1.05;
+        return this._sacar(taxa, valor);
     }
 }

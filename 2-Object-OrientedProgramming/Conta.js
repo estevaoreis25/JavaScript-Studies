@@ -28,11 +28,18 @@ export class Conta {
         }
     
         sacar(valor) {
-            if (this._saldo >= valor) {
-                this._saldo -= valor;
-                return valor;
+           taxa = 1;
+           return this._sacar(taxa, valor);
+        }
+
+        _sacar(taxa, valor){
+            valorSacado = taxa*valor;
+            if (this._saldo >= valorSacado) {
+                this._saldo -= valorSacado;
+                return valorSacado;
             } else {
                 console.log("Esta conta nao possui saldo o sufuciente para fazer esta operação de saque");
+                return 0;
             }
         }
     
